@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>[COLOR:184,134,11,255]GrayPockets[ENDCOLOR] - City Lights - Cooks</Name>
+    <Guid>9780143b-256d-43a9-a68b-4b7d480e0075</Guid>
+    <ProjectGuid>29994dd5-ef8d-40e4-9856-aef4799c3f83</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Cooks for City Lights</Teaser>
+    <Description>This mod cooks several items in "City Lights"[NEWLINE][NEWLINE][ICON_BULLET] Add cross-Civilization District and Improvement adjacency bonuses[NEWLINE][ICON_BULLET] Correct trait errors related to Egypt's special district[NEWLINE][ICON_BULLET] Cothon Borough adjacencies are Gold instead of Food[NEWLINE][ICON_BULLET] Correct miscellaneous adjacency errors[NEWLINE][ICON_BULLET] Remove reference to the original City Park improvement; it no longer appears in the Civilopedia[NEWLINE][ICON_BULLET] Adjacency bonuses now have text instead of placeholders[NEWLINE][ICON_BULLET] Sukritact's Oceans: Artificial Reefs now gain a +2 Culture adjacency bonus from Kelp[NEWLINE][NEWLINE]Mod Support[NEWLINE][ICON_BULLET] Sukritact's Oceans</Description>
+    <Authors>GrayPockets</Authors>
+    <SpecialThanks>Albro</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>GrayPockets.CityLights.Cooks</AssemblyName>
+    <RootNamespace>GrayPockets.CityLights.Cooks</RootNamespace>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Mod" title="CIVILIZATION VI: [COLOR:ResGoldLabelCS]CITY LIGHTS[ENDCOLOR]" id="95b955fc-2dd1-41c5-989e-0265d98a28bd" />
+  <Reference type="Dlc" title="Australia Civilization Pack" id="E3F53C61-371C-440B-96CE-077D318B36C0" />
+  <Reference type="Dlc" title="Persia and Macedon Civilization Pack" id="E2749E9A-8056-45CD-901B-C368C8E83DEB" />
+  <Reference type="Dlc" title="Nubia Civilization Pack" id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" />
+  <Reference type="Dlc" title="Khmer and Indonesia Civilization Pack" id="1F367231-A040-4793-BDBB-088816853683" />
+  <Reference type="Dlc" title="Maya and Gran Colombia Pack" id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" />
+  <Reference type="Dlc" title="Ethiopia Pack" id="1B394FE9-23DC-4868-8F0A-5220CB8FB427" />
+  <Reference type="Dlc" title="Byzantium and Gaul Pack" id="A1100FC4-70F2-4129-AC27-2A65A685ED08" />
+  <Reference type="Dlc" title="Vietnam and Kublai Khan Pack" id="A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C" />
+  <Reference type="Mod" title="Sukritact's Oceans" id="4922ba47-61e1-4b15-9281-db996b14522d" />
+</Associations>]]></AssociationData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="Text_CityLightsCooks"><Properties><LoadOrder>1</LoadOrder></Properties><File>SQL/Text/CityLightsCooks.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks"><Properties><LoadOrder>26</LoadOrder></Properties><File>SQL/Game/CityLightsCooks.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_DLC7"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC7</Criteria><File>SQL/Game/CityLightsCooks_DLC7.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Game/CityLightsCooks_Civs.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Civs_Minimal"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Text/CityLightsCooks_Civs.sql</File></UpdateText><UpdateText id="Text_CityLightsCooks_Civs_Full"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Civs.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC7"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>DLC7</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC7.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC7"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC7</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC7.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC7_DLC9"><Properties><LoadOrder>1</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>DLC7</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC7_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC7_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC7</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC7_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC8"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>DLC8</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC8.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC8"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC8</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC8.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC8_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>DLC8</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC8_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC8_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC8</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC8_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC9.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Civs_Minimal_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Text/CityLightsCooks_Civs_DLC9.sql</File></UpdateText><UpdateText id="Text_CityLightsCooks_Civs_Full_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Civs_DLC9.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_DLC11"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC11</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC11.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_DLC11"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC11</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs_DLC11.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Civs_Minimal_DLC11"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC11</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Text/CityLightsCooks_Civs_DLC11.sql</File></UpdateText><UpdateText id="Text_CityLightsCooks_Civs_Full_DLC11"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>DLC11</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Civs_DLC11.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Full.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Full_DLC3"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC3</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC3.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Full_DLC4"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC4</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC4.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Full_DLC4"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC4</Criteria><File>SQL/Text/CityLightsCooks_Full_DLC4.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full_DLC4_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC4</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC4_DLC9.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Full_DLC4_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC4</Criteria><Criteria>DLC9</Criteria><File>SQL/Text/CityLightsCooks_Full_DLC4_DLC9.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full_DLC5"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC5</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC5.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Full_DLC5"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC5</Criteria><File>SQL/Text/CityLightsCooks_Full_DLC5.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full_DLC5_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC5</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC5_DLC9.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Full_DLC5_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC5</Criteria><Criteria>DLC9</Criteria><File>SQL/Text/CityLightsCooks_Full_DLC5_DLC9.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full_DLC6"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC6</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC6.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Full_DLC6"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC6</Criteria><File>SQL/Text/CityLightsCooks_Full_DLC6.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Full_DLC9"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>DLC9</Criteria><File>SQL/Game/CityLightsCooks_Full_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Improvements"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Improvements.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Improvements"><Properties><LoadOrder>151</LoadOrder></Properties><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Improvements.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Oceans"><Properties><LoadOrder>152</LoadOrder></Properties><Criteria>ModInUse Sukritact's Oceans</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Oceans.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Oceans"><Properties><LoadOrder>152</LoadOrder></Properties><Criteria>ModInUse Sukritact's Oceans</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Oceans.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_Improvements"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_Improvements"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Civs_Minimal_Improvements"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Civs_Improvements.sql</File></UpdateText><UpdateText id="Text_CityLightsCooks_Civs_Full_Improvements"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Civs_Improvements.sql</File></UpdateText><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_Improvements_DLC7"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Minimal</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><Criteria>DLC7</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements_DLC7.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_Improvements_DLC7"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Civ_Changes_Full</Criteria><Criteria>CL_Imp_Changes_Full</Criteria><Criteria>DLC7</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements_DLC7.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Minimal_Improvements_DLC9"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Imp_Changes_Full</Criteria><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Minimal</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Civs_Full_Improvements_DLC9"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Imp_Changes_Full</Criteria><Criteria>DLC9</Criteria><Criteria>CL_Civ_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Civs_Improvements_DLC9.sql</File></UpdateDatabase><UpdateDatabase id="Game_CityLightsCooks_Governors"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Gov_Changes_Full</Criteria><File>SQL/Game/CityLightsCooks_Governors.sql</File></UpdateDatabase><UpdateText id="Text_CityLightsCooks_Governors"><Properties><LoadOrder>201</LoadOrder></Properties><Criteria>CL_Gov_Changes_Full</Criteria><File>SQL/Text/CityLightsCooks_Governors.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="DLC3" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_JOHN_CURTIN,StandardPlayers::LEADER_JOHN_CURTIN,Players:Expansion1_Players::LEADER_JOHN_CURTIN,Players:Expansion2_Players::LEADER_JOHN_CURTIN</LeaderPlayable></Criteria><Criteria id="DLC4" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_ALEXANDER,Players:StandardPlayers::LEADER_CYRUS,StandardPlayers::LEADER_ALEXANDER,StandardPlayers::LEADER_CYRUS,Players:Expansion1_Players::LEADER_ALEXANDER,Players:Expansion2_Players::LEADER_CYRUS,Players:Expansion2_Players::LEADER_ALEXANDER,Players:Expansion2_Players::LEADER_CYRUS</LeaderPlayable></Criteria><Criteria id="DLC5" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_AMANITORE,StandardPlayers::LEADER_AMANITORE,Players:Expansion1_Players::LEADER_AMANITORE,Players:Expansion2_Players::LEADER_AMANITORE</LeaderPlayable></Criteria><Criteria id="DLC6" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_GITARJA,Players:StandardPlayers::LEADER_JAYAVARMAN,StandardPlayers::LEADER_GITARJA,StandardPlayers::LEADER_JAYAVARMAN,Players:Expansion1_Players::LEADER_GITARJA,Players:Expansion2_Players::LEADER_JAYAVARMAN,Players:Expansion2_Players::LEADER_GITARJA,Players:Expansion2_Players::LEADER_JAYAVARMAN</LeaderPlayable></Criteria><Criteria id="DLC7" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_SIMON_BOLIVAR,Players:StandardPlayers::LEADER_LADY_SIX_SKY,StandardPlayers::LEADER_SIMON_BOLIVAR,StandardPlayers::LEADER_LADY_SIX_SKY,Players:Expansion1_Players::LEADER_SIMON_BOLIVAR,Players:Expansion2_Players::LEADER_LADY_SIX_SKY,Players:Expansion2_Players::LEADER_SIMON_BOLIVAR,Players:Expansion2_Players::LEADER_LADY_SIX_SKY</LeaderPlayable></Criteria><Criteria id="DLC8" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_MENELIK,StandardPlayers::LEADER_MENELIK,Players:Expansion1_Players::LEADER_MENELIK,Players:Expansion2_Players::LEADER_MENELIK</LeaderPlayable></Criteria><Criteria id="DLC9" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_BASIL,Players:StandardPlayers::LEADER_AMBIORIX,StandardPlayers::LEADER_BASIL,StandardPlayers::LEADER_AMBIORIX,Players:Expansion1_Players::LEADER_BASIL,Players:Expansion2_Players::LEADER_AMBIORIX,Players:Expansion2_Players::LEADER_BASIL,Players:Expansion2_Players::LEADER_AMBIORIX</LeaderPlayable></Criteria><Criteria id="DLC11" any="1"><LeaderPlayable>Players:StandardPlayers::LEADER_LADY_TRIEU,Players:Expansion1_Players::LEADER_LADY_TRIEU,Players:Expansion2_Players::LEADER_LADY_TRIEU</LeaderPlayable></Criteria><Criteria id="CL_Civ_Changes_Minimal"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_CIV_CHANGES</ConfigurationId><Group>Game</Group><Value>Minimal</Value></ConfigurationValueMatches></Criteria><Criteria id="CL_Civ_Changes_Full"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_CIV_CHANGES</ConfigurationId><Group>Game</Group><Value>Full Integration</Value></ConfigurationValueMatches></Criteria><Criteria id="CL_Imp_Changes_Full"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_IMP_CHANGES</ConfigurationId><Group>Game</Group><Value>Full Integration</Value></ConfigurationValueMatches></Criteria><Criteria id="CL_Gov_Changes_Full"><ConfigurationValueMatches><ConfigurationId>CL_INCLUDE_GOV_CHANGES</ConfigurationId><Group>Game</Group><Value>Full Integration</Value></ConfigurationValueMatches></Criteria><Criteria id="ModInUse Sukritact's Oceans"><ModInUse>4922ba47-61e1-4b15-9281-db996b14522d</ModInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="SQL" />
+    <Folder Include="SQL\Game" />
+    <Folder Include="SQL\Text" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC11.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC7.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC7_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC8.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC8_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_Improvements_DLC7.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs_Improvements_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_DLC7.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC4.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC4_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC5.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC5_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC6.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC3.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Full_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Governors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Oceans.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Civs.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Civs_DLC11.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Civs_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Civs_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Full_DLC4.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Full_DLC4_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Full_DLC5.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Full_DLC5_DLC9.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Full_DLC6.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Governors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks_Oceans.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include=".gitignore">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="LICENSE">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="City Lights Cooks.png">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="City Lights Cooks.xcf">
+      <SubType>Content</SubType>
+    </None>
+    <None Include="README.md">
+      <SubType>Content</SubType>
+    </None>
+    <Content Include="SQL\Game\CityLightsCooks.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Game\CityLightsCooks_Civs.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SQL\Text\CityLightsCooks.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

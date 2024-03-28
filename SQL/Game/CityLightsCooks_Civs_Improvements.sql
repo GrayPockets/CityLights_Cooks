@@ -1,0 +1,21 @@
+-- Missing Adjacencies for Innovation Hub / Polder
+
+INSERT INTO "District_Adjacencies"
+	(	"DistrictType",					"YieldChangeID"					)
+VALUES
+	(	'DISTRICT_SEOWON',				'IMP_CL_AMERICA_INNOVATION_SCI'	),
+	(	'DISTRICT_SUGUBA',				'IMP_CL_AMERICA_INNOVATION_GOL'	),
+	(	'DISTRICT_SUGUBA',				'IMP_CL_DUTCH_WAREHOUSE_GOL'	),
+	(	'DISTRICT_COTHON',				'IMP_CL_DUTCH_WAREHOUSE_GOL'	),
+	(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'IMP_CL_DUTCH_WAREHOUSE_GOL'	),
+	(	'DISTRICT_HANSA',				'IMP_CL_AMERICA_INNOVATION_PRD'	);
+
+-- Placeholder Text Corrections
+
+UPDATE "Adjacency_YieldChanges"
+SET "Description" = 'LOC_IMPROVEMENT_AZTEC_LANDMARK_FTH'
+WHERE "ID" = 'IMP_CL_AZTEC_LANDMARK_FTH';
+
+UPDATE "Adjacency_YieldChanges"
+SET "Description" = 'LOC_IMPROVEMENT_AZTEC_LANDMARK_PRD'
+WHERE "ID" = 'IMP_CL_AZTEC_LANDMARK_PRD';
